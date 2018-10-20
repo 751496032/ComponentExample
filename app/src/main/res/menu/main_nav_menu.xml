@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:id="@+id/item_home"
+        android:icon="@mipmap/icon_main_home_unsel"
+        android:title="@string/main_nav_home" />
+
+    <item android:id="@+id/item_cart"
+        android:icon="@mipmap/icon_main_cart_unsel"
+        android:title="@string/main_nav_cart"/>
+
+    <item android:id="@+id/item_me"
+        android:icon="@mipmap/icon_main_me_unsel"
+        android:title="@string/main_nav_me"/>
+</menu>

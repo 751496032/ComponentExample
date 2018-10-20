@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudyAndroid.iml" filepath="$PROJECT_DIR$/StudyAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_cart/app_cart.iml" filepath="$PROJECT_DIR$/app_cart/app_cart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_home/app_home.iml" filepath="$PROJECT_DIR$/app_home/app_home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_login/app_login.iml" filepath="$PROJECT_DIR$/app_login/app_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_me/app_me.iml" filepath="$PROJECT_DIR$/app_me/app_me.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bitmap/bitmap.iml" filepath="$PROJECT_DIR$/bitmap/bitmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broadcast/broadcast.iml" filepath="$PROJECT_DIR$/broadcast/broadcast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvc/mvc.iml" filepath="$PROJECT_DIR$/mvc/mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp/mvp.iml" filepath="$PROJECT_DIR$/mvp/mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progress/progress.iml" filepath="$PROJECT_DIR$/progress/progress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rxjava/rxjava.iml" filepath="$PROJECT_DIR$/rxjava/rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/view/view.iml" filepath="$PROJECT_DIR$/view/view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webview/webview.iml" filepath="$PROJECT_DIR$/webview/webview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/window/window.iml" filepath="$PROJECT_DIR$/window/window.iml" />
+    </modules>
+  </component>
+</project>

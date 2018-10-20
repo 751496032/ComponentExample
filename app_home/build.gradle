@@ -1,0 +1,63 @@
+boolean  isAloneRun=isModuleRun.toBoolean()
+if (isAloneRun){
+    apply plugin: 'com.android.application'
+}else {
+    apply plugin: 'com.android.library'
+}
+
+
+android {
+    compileSdkVersion compile_sdk_version.toInteger()
+
+    defaultConfig {
+        //组件在application模式下需设置applicationId，否则会找不到包名，在library下是不允许applicationId
+        if (isAloneRun){
+            applicationId "com.hzw.home"
+        }
+        minSdkVersion min_sdk_version.toInteger()
+        targetSdkVersion target_sdk_version.toInteger()
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        /*ARouter 生成路由文档*/
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName(), AROUTER_GENERATE_DOC: "enable"]
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets{
+      main{
+          if (isAloneRun){
+              manifest.srcFile 'src/main/module_run/AndroidManifest.xml'
+          }else {
+              manifest.srcFile 'src/main/AndroidManifest.xml'
+          }
+
+      }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    annotationProcessor "com.alibaba:arouter-compiler:${arouter_annotation_version}"
+    if (isAloneRun) {
+        api project(':app_login')
+    }else {
+        api project(':base')
+    }
+}
