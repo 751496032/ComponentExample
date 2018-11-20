@@ -12,6 +12,7 @@ import com.hzw.common.ARouterManager;
 import com.hzw.common.SpUtils;
 import com.hzw.me.R;
 import com.hzw.base.BaseFragment;
+import com.hzw.provider.BaseProvider;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -29,7 +30,6 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
         Bundle args = new Bundle();
 
         MeFragment fragment = new MeFragment();
-        fragment.setArguments(args);
         return fragment;
     }
 
@@ -46,6 +46,9 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
         mButExitLogin = view.findViewById(R.id.but_exit_login);
         mButLogin.setOnClickListener(this);
         mButExitLogin.setOnClickListener(this);
+
+        BaseProvider provider = (BaseProvider) ARouter.getInstance().build("/me/provider/text").navigation();
+        provider.setMeText(mTvIntro.getText().toString());
     }
 
     @Override
@@ -61,6 +64,7 @@ public class MeFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.but_login) {
+
             ARouter.getInstance().build(ARouterManager.LoginActivity).navigation();
         } else if (id == R.id.but_exit_login) {
             isLogin = false;

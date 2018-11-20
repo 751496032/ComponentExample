@@ -3,7 +3,7 @@
           package="com.hzw.me">
 
     <application
-        android:name="com.hzw.BaseApplication"
+      android:name=".MeApp"
         android:allowBackup="true"
         android:icon="@mipmap/module_me_logo"
         android:label="@string/module_me_name"

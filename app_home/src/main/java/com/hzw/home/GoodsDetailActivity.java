@@ -1,10 +1,9 @@
 package com.hzw.home;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -16,9 +15,6 @@ import com.hzw.base.BaseEvent;
 import com.hzw.common.ARouterManager;
 import com.hzw.common.LogUtils;
 import com.hzw.common.SpUtils;
-
-import org.greenrobot.eventbus.Subscribe;
-import org.greenrobot.eventbus.ThreadMode;
 
 @Route(path = ARouterManager.GoodsDetailActivity)
 @SuppressWarnings("all")

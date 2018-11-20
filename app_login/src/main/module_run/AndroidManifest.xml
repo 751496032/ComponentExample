@@ -3,6 +3,7 @@
           package="com.hzw.login">
 
     <application
+        android:name=".LoginApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/module_login_app_name"

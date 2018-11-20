@@ -3,7 +3,7 @@
     package="com.hzw.cart">
 
     <application
-        android:name="com.hzw.BaseApplication"
+        android:name=".CartApp"
         android:allowBackup="true"
         android:icon="@mipmap/module_cart_logo"
         android:label="@string/module_cart_name"

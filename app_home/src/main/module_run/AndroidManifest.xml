@@ -5,7 +5,7 @@
           tools:ignore="all">
 
     <application
-        android:name="com.hzw.BaseApplication"
+        android:name=".HomeApp"
         android:allowBackup="true"
         android:icon="@mipmap/module_home_logo"
         android:label="@string/module_app_name"
